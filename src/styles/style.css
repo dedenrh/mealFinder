@@ -1,0 +1,43 @@
+@import "appbar.css";
+@import "meals.css";
+@import "searchbar.css";
+@import "singlemeal.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2d2013;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+main {
+  margin: auto;
+  max-width: 800px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .search-container {
+    flex-direction: column;
+    position: static;
+  }
+
+  input[type="search"] {
+    width: 100%;
+  }
+}
